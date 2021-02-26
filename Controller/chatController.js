@@ -10,7 +10,6 @@ exports.getHomePage = (request, response, next) => {
 };
 
 exports.postMessage = (request, response, next) => {
-  console.log(request.body.message);
   const chat = new ChatModel({
     message: request.body.message,
   });
